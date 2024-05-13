@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+
+header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:#273749;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    
+}
+
+.logo {
+    color: #FF7C20;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #FF7C20;
+    font-weight: bold;
+}
+
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 35px;
+}
+
+.menu label {
+    cursor:  pointer;
+    display: none;
+}
+
+@media(max-width:1023px) {
+    .menu {
+        padding: 30px ;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3f3f3f48;
+        backdrop-filter: blur(5px);
+        display: none;
+        
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .header {
+        padding: 80px 30px 50px 30px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .header-txt h1 {
+        margin-bottom: 10px;
+    }
+    .images {
+        position: initial;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.foto-y-texto-interior-1{
+    width:100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-ACTIVIDADES/Ascensión-Cerro-Tronador-Patagonia-refugio-actividad.jpg);
+}
+
+.foto-y-texto-interior-2{
+    width:100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-ACTIVIDADES/Travesia-Valle-de-los-Lagos-El-Bolson-Patagonia-Argentina.jpg);
+}
+
+.banner{
+    width:100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-NOSOTROS/Refugios-de-montana-Nosotros-Guias-Expertos-y-Certificados-low.jpg);
+}
+.banner-2{
+    width:100%;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-NOSOTROS/Experiencia-Refugios-de-Montana-backpacker-traveling-forest.jpg);
+}
+.banner-3{
+    width:100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50%;
+    background-image: url(../img/Refugios-ACTIVIDADES/Recomendaciones-caminatas-trekking-escaladas-Patagonia-Argentina.jpg);
+}
+.banner-4{
+    width:100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 90%;
+    background-image: url(../img/Refugios-ACTIVIDADES/mapa-refugios.jpg);
+}
+.banner-A{
+    width:100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-ACTIVIDADES/Ascensión-Cerro-Tronador-Patagonia-refugio-actividad.jpg);
+}
+.banner-B{
+    width:100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../img/Refugios-ACTIVIDADES/Travesia-Valle-de-los-Lagos-El-Bolson-Patagonia-Argentina.jpg);
+}
+.banner-description{
+    width:90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-txt {
+    position: relative;  /*Establecer la posición relativa para permitir el posicionamiento absoluto del botón */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /*Establecer la altura para que ocupe toda la pantalla */
+}
+
+.header-txt h1{
+    font-size: 100px;
+    text-align: center;
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+    align-items: center;
+
+}
+.header-txt .contorno{
+    color: transparent;  /*Hacer el texto transparente para que solo se vea el contorno */
+    -webkit-text-stroke: 2px rgb(255, 255, 255);  /*Añadir un contorno de 2px en negro */
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.header-txt p{
+    margin-top: 150px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: arial;
+}
+
+.btn-1 {
+    text-transform: uppercase;
+    color: #FEDCC4;
+    background-color: #FF7C20;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 70px;
+    border-radius: 10px;
+}
+.btn-1 :hover {
+    background-color: #EE6300;
+    box-shadow: 0 6 10px #FF9E5A;
+}
+.btn-1-secondary{
+    text-transform: uppercase;
+    color:  #FF7C20;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 50px;
+    border-radius: 10px;
+    border-color: #FF9E5A;
+    border-style: solid;
+
+}
+.btn-1-secondary:hover{
+    background-color: #EE6300;
+    color: #FEDCC4;
+}
+
+
+.btn-2 {
+    text-transform: uppercase;
+    color: #FEDCC4;
+    background-color: #FF7C20;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 70px;
+    border-radius: 10px;   
+
+}
+
+.btn-1-contactanos {
+    text-transform: uppercase;
+    color: #FEDCC4;
+    background-color: #FF7C20;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding:16px 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn-1-contactanos :hover {
+    background-color:#EE6300;
+    box-shadow: 0 6 10px #FF9E5A;
+}
+
+
+a {
+    text-decoration: none;
+    color: #c0c0c0;
+    }
+body {
+    font-family: "Inter", sans-serif;
+    }
+.container {
+    margin: 0;
+    }
+
+
+/*
+.logo {
+height: 30px;
+margin: 16px;
+    }*/
+
+.HeroRefugioVistaAerea {
+    position: relative;
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    background-position: center;
+    pointer-events: none;
+     /* Evita que la imagen se pueda hacer clic */       
+    }
+    .HeroRefugioVistaAerea-1 {
+        position: relative;
+        height: 600px; /* Ajusta la altura según tus necesidades */
+        overflow: hidden;
+        background-position: center;
+        pointer-events: none;
+         /* Evita que la imagen se pueda hacer clic */ 
+        margin-top: 40px;
+        }
+        .fotofoto-back{
+            position: fixed;
+            height: 600px; /* Ajusta la altura según tus necesidades */
+            overflow: hidden;
+            background-position: center;
+            pointer-events: none;
+        
+        }
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+
+    .videoText {
+        text-align: center;
+        width: 100%;
+        font-weight: 300;
+        color: #FF7C20
+    
+    }
+    
+    .subtitulo {
+        font-weight: 300;
+        line-height: 1.5;
+        color: #f2f2f2;
+        display: flex;
+        padding-bottom: 5%;
+        padding-top: 1%;
+        padding-right: 5%;
+        padding-left:5%
+    }
+
+    .subtitulo-dark {
+        color: #273749;
+        font-weight: 300;
+        line-height: 1.5;
+        display: flex;
+        padding-bottom: 5%;
+        padding-top: 1%;
+        padding-right: 15%;
+        padding-left: 15%;
+        gap: 20px;
+        text-align: center;
+    }
+    .naranja{
+        color: #FF7C20;
+    }
+    .subtitulo-dark-small {
+        color: #273749;
+        font-weight: 300;
+        line-height: 2;
+        gap: 20px;
+        display: flex;
+flex-direction: column;      
+padding-right: 20%;
+        padding-left: 20%;
+        text-align: center;
+    
+    }
+
+
+    .segundoTit{
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .tercerasec{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: -50px;
+        }
+    
+    .seccion1-experiencia-2 {
+        position: relative;
+        overflow: hidden;
+        background-position: center;
+        pointer-events: none;
+         /* Evita que la imagen se pueda hacer clic */    
+        height: 180px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column; /* Para colocar el título arriba del párrafo */
+        justify-content: center;  Centra verticalmente */
+        align-items: center; Centra horizontalmente 
+        text-align: center;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+    .parrafo1{
+        text-align: center;
+        font-weight: 300;
+        width: 50%;
+        display: flex;
+        justify-items: center;
+    
+    }
+    
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    }
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    }
+
+h4 { 
+    font-size: 20px;
+    font-weight: 300;
+    }
+
+.CommonLabel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7C20;
+    font-family: "Inter", sans-serif;
+    }
+
+a :hover {
+        color: #273749;
+        }
+
+.derechos {
+    font-size: 12px;
+    font-weight: 300;
+    color: #c0c0c0;
+    padding-top: 2px;
+    padding-left: 26px;
+    height: 33px;
+    }
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    }
+
+h2, h3, h4 {
+    color: #FF7C20
+    }
+
+    .titulo {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        text-align: center;
+        position: relative;
+        color: #FF7C20;
+    }
+    .titulo-3 {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+        position: relative;
+        color: #FF7C20;
+    }
+.contenedor-dos-columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.izquierda .derecha{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.listado {
+    margin-top: 50px;;
+
+}
+.card-group {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+}
+
+.card {
+    width: 314px;
+    height: 550px;
+    position: relative;
+    margin: 20px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 12px #c0c0c0 ;
+    }
+
+
+.card-content {
+    width: 440px;
+    height: 400px;
+    position: relative;
+    margin: 20px;
+padding-top: 50px;    border-radius: 16px;
+    }
+
+.card .card-image {
+width: 100%; 
+height: 200px; 
+object-fit: cover; 
+}
+
+.card .card-title {
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    padding-top: 20px;
+    color:#FF7C20
+    }
+
+.card .card-text {
+font-size: 15px;
+line-height: 2;
+text-align: left;
+margin: 25px;
+padding-bottom: 50px;
+}
+
+.card-text-2{
+font-size: 15px;
+line-height: 2;
+text-align: left;
+margin: 30px;
+padding-bottom: 50px;
+}
+
+
+.tarjetas-contenedor-1 {
+margin: 0px 30px 0px 30px;
+display: flex; /* Activar Flexbox */
+flex-direction: row;
+justify-content: space-around; /* Distribuir los elementos con espacio entre ellos */
+align-items: flex-start; 
+}
+
+@media (max-width: 1023px) {
+    .tarjetas-contenedor-1 {
+      flex-direction: column; /* Alinear verticalmente en móviles */
+      align-items: center; /* Alinear horizontalmente al centro en móviles */
+    }
+    .footer-info {
+        flex-direction: column; /* Alinear verticalmente en móviles */
+        align-items: left;
+        }
+        .footer-links {
+            flex-direction: column; /* Alinear verticalmente en móviles */
+            align-items: left;
+            }
+        .footer {
+        flex-direction: column; /* Alinear verticalmente en móviles */
+        align-items: left;
+            }
+    }
+
+.card .card-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.Contactanos {
+    background-color: #273749;
+    height: 500px;
+    margin-top: 60px;
+}
+.contactanos {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #273749;
+
+    align-items: center;
+
+}
+
+.contenedorform {
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.partizq {
+    width: 50%;
+    min-width: 500px;
+}
+
+.partizq h2{
+    color: #FF7C20;
+}
+.partizq p{
+    color: azure;
+}
+
+
+.partder {
+    min-width: 500px;
+}
+
+.custom-bg {
+    background-color: #273749 !important;
+
+}
+
+.custom-bg::placeholder {
+    color: rgb(165, 165, 165) !important;
+
+}
+
+        /* aca termina CONTACTANOS*/
+        
+.a-especial {
+    color: #c0c0c0;
+    text-decoration: none;
+    }
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+}
+
+.footer-logo {
+    width: 100px;
+    margin-left: 50px;
+    margin-bottom: 24px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;  
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    align-content: space-evenly;
+
+}
+
+.footer-list :hover {
+    color: #FF9E5A;
+}
+
+.CommonLabel{
+    color: #FF9E5A;
+
+}
+.img-footer-logo {
+    height: 40px;
+
+}
+
+.redes-sociales {
+    margin-top: 24px;
+    margin-right: 20px;
+    margin-bottom: 24px;
+    color: #FF9E5A;
+
+}
+.redes-sociales :hover {
+    color: #273749;
+
+}
+
+.bi :hover {
+    color: #273749;
+}
+
+.bi {
+    color: #FF7C20;
+    margin-right: 20px;
+section h2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 45px;
+}
+
+img{
+max-width: 95%;
+height: 540px;
+}
+
+.contenedor{
+max-width: 1600px;
+width: 100%;
+margin: auto
+}
+
+.entrada{
+position: relative;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.entrada h3{
+position: absolute;
+margin-bottom: 4rem;
+color: rgb(255, 255, 255);
+font-size: 2rem;
+text-transform: uppercase;
+}
+
+.entrada p{
+position: absolute;
+margin-top: 8rem;
+color: rgb(255, 255, 255);
+font-size: 1.2rem;
+text-transform: uppercase;
+}
+
+.entrada a{
+position: absolute;
+margin-top: 16rem;
+justify-content: center;
+background-color: orange;
+padding: 12px 30px;
+border-radius: 7px;
+}
+
+.entrada a:hover{
+    background-color: rgb(225, 154, 22)
+}
+
+.entrada a:visited{
+color: #ffffff;
+}
+
+.titulo{
+margin-top: 3rem;
+text-align: center;
+}
+
+.titulo h3{
+font-size: 35px;
+color: rgb(75, 75, 75);
+}
+
+.titulo p{
+margin-top: 1.5rem;
+font-size: 18px;
+color: rgb(75,75,75);
+}
+
+.dias ol li{
+margin-top: 1.2rem;
+font-size: 35px;
+}
+
+.dias ol p{
+font-weight: bold;
+margin-top: 1.2rem;
+}
+
+
+@media (min-width: 480px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+
+    .t-center{
+        padding: 80px 30px 50px 30px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-center p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    img{
+        position: initial;
+        width: 300px;
+        height: 300px;
+    }
+
+}
