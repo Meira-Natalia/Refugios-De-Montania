@@ -248,11 +248,11 @@ header {
     border-radius: 10px;
     text-align: center;
 }
-.btn-1-contactanos :hover {
+.btn-1-contactanos:hover {
     background-color:#EE6300;
     box-shadow: 0 6 10px #FF9E5A;
-}
 
+}
 
 a {
     text-decoration: none;
